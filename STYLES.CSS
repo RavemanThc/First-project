@@ -1,13 +1,17 @@
-/* Container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
+@media  screen and (min-width: 525px) {
+  .header-pc {
+    display: block
+  }
+  .header-mobile {
+    display: none
+  }
 }
 
-/* Bottom left text */
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+@media  screen and (max-width: 525px; ) {
+  .header-pc {
+    display: none
+  }
+  .header-mobile {
+    display: block
+  }
 }
